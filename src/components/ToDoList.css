@@ -1,0 +1,121 @@
+.todolist-container {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(102, 126, 234, 0.25);
+  width: 100%;
+  max-width: 640px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Add task row */
+.add-task-row {
+  display: flex;
+  gap: 0;
+  padding: 1.25rem 1.25rem 0;
+}
+
+.add-task-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  font-family: 'Inter', sans-serif;
+  border: 2px solid #e5e7eb;
+  border-right: none;
+  border-radius: 12px 0 0 12px;
+  outline: none;
+  transition: border-color 0.2s;
+  color: #1a1a2e;
+}
+
+.add-task-input:focus {
+  border-color: #667eea;
+}
+
+.add-task-input::placeholder {
+  color: #9ca3af;
+}
+
+.add-task-btn {
+  padding: 0.75rem 1.25rem;
+  background: #667eea;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0 12px 12px 0;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  white-space: nowrap;
+}
+
+.add-task-btn:hover {
+  background: #5a6fd6;
+}
+
+.add-task-btn:active {
+  transform: scale(0.97);
+}
+
+/* Filter tabs */
+.filter-tabs {
+  display: flex;
+  gap: 0.4rem;
+  padding: 1rem 1.25rem 0.5rem;
+}
+
+.filter-tab {
+  padding: 0.35rem 0.9rem;
+  border: 2px solid #e5e7eb;
+  background: transparent;
+  color: #6b7280;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-tab:hover {
+  border-color: #667eea;
+  color: #667eea;
+}
+
+.filter-tab--active {
+  background: #667eea;
+  border-color: #667eea;
+  color: #fff;
+}
+
+/* Todo list */
+.todo-ul {
+  list-style: none;
+  padding: 0.5rem 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-height: 120px;
+}
+
+.empty-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  color: #9ca3af;
+  font-size: 0.9rem;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Footer */
+.todolist-footer {
+  border-top: 1px solid #f3f4f6;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  text-align: right;
+}
